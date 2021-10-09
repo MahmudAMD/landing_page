@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="asset/css/bootstrap.min.css">
         <link
             rel="stylesheet"
-            href="https:///use.fontawesome.com/release/v5.7.0/css/all.css">
+            href="https:///use.fontawesome.com/releases/v5.7.0/css/all.css">
 
             <style>
                 body {
@@ -42,6 +42,46 @@
                 .service-style {
                     margin-top: 15px;
                     background-color: transparent;
+                }
+
+                .container-fluid-max {
+                    max-width: 1140px;
+                }
+                .text-green {
+                    color: green;
+                }
+                .button-sekunder {
+                    background-color: transparent;
+                    border: gray;
+                    color: green;
+                }
+                .button-sekunder:hover {
+                    background-color:   green;
+                    border-color: gray;
+                    color: white;
+                }
+                .cover {
+                    background: no-repeat center/cover;
+                }
+                .bg-red {
+                    background-color: red;
+                }
+                h2:before, h2:after {
+                    background-color: green;
+                    content: "";
+                    display: inline-block;
+                    height: 1px;
+                    position: relative;
+                    vertical-align: middle;
+                    width: 25$;
+                }
+                h2:before{
+                    right: 0.5rem;
+                    margin-right: -50%;
+                }
+                h2:after{
+                    right: 0.5rem;
+                    margin-left: -50%;
                 }
             </style>
 
@@ -94,14 +134,131 @@
           </section>
 
           <!-- service -->
-          <section id="service" class="service-style">
-              <div class="row">
-                  <div class="cal-12">
-                      <h2>
-                          Mengapa memilih kami??
+          <section id="service" class="service-style container-fluid container-fluid-max">
+              <div class="row text-center">
+                  <div class="cal-12 pb-4">
+                      <h2 class="display-4 text-center mb-5" style="margin-top: 4rem!important;">
+                          Mengapa memilih kami?
                       </h2>
                   </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                      <span class="fa-stack fa-2x">
+                          <i class="fas fa-circle fa-stack-2x text-green"></i>
+                          <i class="fas fa-list-ol fa-stack-1x text-white "></i>
+                      </span>
+                      <h3>Fasilitas Oke</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt libero a voluptate minus,</p>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x text-green"></i>
+                        <i class="fas fa-laptop-co fa-stack-1x text-white "></i>
+                    </span>
+                    <h3>Modul Lengkap</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt libero a voluptate minus,</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x text-green"></i>
+                        <i class="fas fa-money-bill fa-stack-1x text-white "></i>
+                    </span>
+                    <h3>Biaya Terjangkau</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt libero a voluptate minus,</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x text-green"></i>
+                        <i class="fas fa-chart-line fa-stack-1x text-white "></i>
+                    </span>
+                    <h3>Terarah</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt libero a voluptate minus,</p>
+                </div>
               </div>
+              
           </section>
+          <!-- product -->
+          <section id="product" class="container">
+              <div class="row text-center">
+                  <div class="col-12 pb-4">
+                        <h2 class="display-4 text-center mb-5" style="margin-top: 4rem!important;">
+                            Produk Kami
+                        </h2>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card">
+                          <img class="card-img-top" style="max-height: 400px;" src="asset/image/img1.jpg" alt="Produk-1">
+                          <div class="card-body">
+                              <h5 class="card-title">Membuat Aplikasi Android berbasis Lokasi dengan Android Studio</h5>
+                              <p class="card-text">
+                                Belajar membuat aplikasi android (kotlin) berbasis lokasi dengan studi khusus aplikasi  presentasi digital
+                              </p>
+                          </div>
+                          <div class="card-footer">
+                              <a href="#" class="btn button-sekunder">Lihat Detai & Harga &raquo;</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                    
+            
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" style="max-height: 400px;" src="asset/image/img2.jpg" alt="Produk-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Membangun Sistem Informasi dengan Laravel 6</h5>
+                            <p class="card-text">
+                              Belajar langkah demi langkah membangun sistem informasi perpustakaan dengan Laravel 6
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn button-sekunder">Lihat Detai & Harga &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" style="max-height: 400px;" src="asset/image/img3.jpg" alt="Produk-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Membangun Website Toko Online</h5>
+                            <p class="card-text">
+                              Belajar membanggun website online menggunakan Framework PHP CodeIgniter
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn button-sekunder">Lihat Detai & Harga &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" style="max-height: 400px;" src="asset/image/img3.jpg" alt="Produk-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Membangun Website Kuliner Menggunakan React.JS/<h5>
+                            <p class="card-text">
+                              Belajar membanggun website toko online menggunakan Framework React.JS
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn button-sekunder">Lihat Detai & Harga &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+           
+          </section>
+
+          <!-- footer -->
+          <div class="col-lg-12" style="padding: 10px;">
+        <div style="text-align: center;">
+            <a href="#" class="text-light" style="padding: 5px;"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-light" style="padding: 5px;"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-light" style="padding: 5px;"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="text-center text-secondary">Copyright &copy Mahmud_S.</p>
+    </div>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     </body>
 </html>
